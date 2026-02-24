@@ -1,0 +1,8 @@
+# Ficheiros de configuração sensíveis (Passwords, IPs reais)
+.env
+
+# Ficheiros de log e backups caso sejam gerados localmente durante testes
+*.log
+*.tar.gz
+*.backup
+/vpn-clients/
