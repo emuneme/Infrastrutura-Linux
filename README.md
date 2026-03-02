@@ -6,8 +6,8 @@ Este Script foi criado por:
                             ├── +258878491000
                             ├── emunene@aster.co.mz
                             ├── www.aster.co.mz
-                            ├── facebook.com/aster.co.mz
-                            ├── linkedin.com/company/asterinformatica
+                            ├── https://facebook.com/aster.co.mz
+                            ├── https://linkedin.com/company/asterinformatica
                                                         
 
 ## 🏗️ Arquitetura do Sistema
@@ -50,6 +50,7 @@ infra_bash/
 ### Pré-requisitos
 *   Um servidor a correr Ubuntu Server (versão recente recomendada, ex: 22.04 LTS ou 24.04 LTS).
 *   Duas placas de rede fisicamente conectadas (WAN e LAN).
+*   Um particionamento criterioso em blocos LVM (Veja o nosso [Guia de Particionamento e Gestão de Discos LVM](GUIA_PARTICIONAMENTO.md)).
 *   Privilégios de `root` (`sudo su`).
 *   Acesso à Internet na interface WAN para download dos pacotes.
 
