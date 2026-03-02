@@ -46,9 +46,18 @@ infra_bash/
 *   Acesso à Internet na interface WAN para download dos pacotes.
 
 ### Passo 1: Preparação
-1. Copie a pasta `infra_bash` para o servidor (ex: `/root/infra_bash/`).
-2. Abra o ficheiro `.env` com um editor de texto (`nano .env` ou `vim .env`).
-3. Adapte as variáveis cruciais à sua realidade física:
+
+Se estiver a usar um computador com **Windows 10 ou 11**, pode enviar a pasta do projeto diretamente para o servidor Linux utilizando o PowerShell nativo através do protocolo SSH (garanta que o servidor tem o serviço SSH ativo):
+
+1. **Abra o PowerShell** no seu computador Windows.
+2. Navegue até à pasta onde guardou o projeto (ex: Em Transferências) e execute o comando `scp` para copiar a pasta inteira para o servidor:
+   ```powershell
+   scp -r .\infra_bash root@10.0.0.1:/root/
+   ```
+   *(Substitua `10.0.0.1` pelo IP atual do seu servidor Ubuntu e `root` pelo nome de utilizador com permissões)*.
+
+3. Após a pasta estar no servidor, aceda-lhe via SSH ou diretamente na máquina e abra o ficheiro `.env` com um editor de texto (`nano .env` ou `vim .env`).
+4. Adapte as variáveis cruciais à sua realidade física:
    *   `IF_WAN`: Nome da interface ligada à Internet (ex: `enps03`).
    *   `IF_LAN`: Nome da interface ligada à sua rede local (switch) (ex: `enps08`).
    *   `DOMAIN_REALM`: O nome de domínio desejado (ex: `aster.local`).
