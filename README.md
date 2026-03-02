@@ -1,6 +1,14 @@
 # Documentação da Infraestrutura ASTER
 
 Bem-vindo à documentação oficial da infraestrutura ASTER. Este projeto contém um conjunto de scripts modulares em Bash desenhados para aprovisionar, de forma automática e consistente (Infrastructure as Code - IaC), um servidor Ubuntu como o núcleo de uma rede corporativa.
+Este Script foi criado por:
+                            ├── Eusebio Augusto Munene
+                            ├── +258878491000
+                            ├── emunene@aster.co.mz
+                            ├── www.aster.co.mz
+                            ├── facebook.com/aster.co.mz
+                            ├── linkedin.com/company/asterinformatica
+                                                        
 
 ## 🏗️ Arquitetura do Sistema
 
